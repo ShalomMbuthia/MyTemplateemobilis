@@ -1,0 +1,49 @@
+@keyframes animations {
+    0%{
+        border:5px dotted blue;
+    }
+    25%{
+        border:5px dashed green;
+    }
+    50%{
+        border:5px dotted blue;
+    }
+    100%{
+        border:5px dashed green;
+    }
+
+}
+.animations{
+    animation-name: animation
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+@keyframes photos {
+    0%{
+        background-image:url("");
+    }
+    30%{
+        background-image: url("photos/rabbit.jpg");
+    }
+    60%{
+        background-image: url("photos/river.jpg");
+    }
+    90%{
+        background-image: url("photos/emobilis.jpeg.jpg");
+    }
+}
+.background_animation{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation-name: photos;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+
+
